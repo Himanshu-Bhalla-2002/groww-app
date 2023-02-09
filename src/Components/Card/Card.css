@@ -1,0 +1,92 @@
+* {
+    --cardImageWidth: 20rem;
+    --cardImageHeight: 18rem;
+}
+
+.card {
+    width: 20rem;
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+    background: var(--cardColor);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 2rem;
+}
+
+
+.listView .card {
+    margin: 1rem 0.2rem;
+}
+
+.card_description {
+    width: 100%;
+}
+
+.card_image {
+    width: var(--cardImageWidth);
+    height: var(--cardImageHeight);
+    background: var(--cardColor);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card_description {
+    background: var(--cardColor);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    margin: 1rem 0;
+}
+
+.user_icons {
+    margin-right: 0.3rem;
+}
+
+@media only screen and (max-width: 900px) {
+    * {
+        --cardImageWidth: 100%;
+    }
+    .card {
+        width: 39vw;
+        max-width: 15rem;
+        max-height: 18rem;
+        padding: 0;
+    }
+
+    
+    .listView .card {
+        width: 15rem;
+        padding: 1rem;
+        max-height: 100%;
+    }
+
+    .card_image {
+        width: var(--cardImageWidth);
+        max-width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        --cardImageWidth: 100%;
+    }
+    .card {
+        width: 39vw;
+        margin: 1rem 0;
+        max-width: 20rem;
+        max-height: 10rem;
+        padding: 0;
+    }
+
+    
+    .listView .card {
+        width: 15rem;
+        max-height: 100%;
+    }
+
+    .card_image {
+        width: var(--cardImageWidth);
+        max-height: 10rem;
+    }
+
+    .listView .card_image {
+        max-height: 12rem;
+    }
+}

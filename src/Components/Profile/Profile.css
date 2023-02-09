@@ -1,0 +1,81 @@
+.profile {
+    margin-top: var(--basicMargin);
+    padding-bottom: var(--basicMargin);
+    background-color: var(--backgroundColor);
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.no_user {
+    margin: 2rem 0;
+}
+
+.user_profile {
+    width: 90%;
+}
+
+.profile_pic {
+    max-width: 30vw;
+    max-height: 30vw;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.user_detail {
+    padding: 1rem;
+    margin: 1rem;
+    background: var(--cardColor);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 2rem;
+}
+
+.user_data {
+    width: 100%;
+}
+
+.user_photos {
+    margin: 2rem 0;
+    width: 95%;
+}
+
+.view {
+    width: 100%;
+}
+
+.view_button {
+    width: 40%;
+    padding: 0.7rem 1rem;
+    background: var(--cardColor);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 2rem;
+}
+
+.view_zero_post {
+    min-width: 20vw;
+    text-align: center;
+    padding: 3rem 4rem;
+    background: var(--cardColor);
+    border: 2px solid black;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+}
+
+.icon_size {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .user_photos {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .user_profile {
+        width: 100vw;
+    }
+
+    .user_photos {
+        width: 100%;
+    }
+}
